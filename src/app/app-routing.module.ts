@@ -6,6 +6,7 @@ import {UpdateSouscripteurComponent} from './souscripteur/update-souscripteur/up
 
 import {LoginComponent} from './login/login.component';
 
+
 const routes: Routes = [
   {path : "souscripteur", component: SouscripteurComponent},
   {path : "add-souscripteur", component: AddSouscripteurComponent},

@@ -54,7 +54,11 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/assets/vendors/js/vendor.bundle.base.js",
+              "src/assets/vendors/chart.js/Chart.min.js",
+              "src/assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js",
+              "src/assets/vendors/progressbar.js/progressbar.min.js",
             ]
           },
           "configurations": {

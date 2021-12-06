@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="card shadow mb-4">
+		<div class="card-body">
+			<table >
+				<thead>
+					<tr>
+						<th>Liste des souscipteurs</th>
+					</tr>
+					<br>
+					<tr>
+						<th>ID</th>
+						<th>NOM</th>
+						<th>TEL</th>
+						<th>COMMENTAIRE</th>
+						<th>DATE NAISSANCE</th>
+					</tr>
+				</thead>
+				<tbody *ngFor="let souscripteur of souscripteurs">
+					<tr>
+						<td>{{souscripteur.idSouscripteur}}</td>
+						<td>{{souscripteur.nomSouscripteur}}</td>
+						<td>{{souscripteur.telSouscripteur}}</td>
+						<td>{{souscripteur.commentaireSouscripteur}}</td>
+						<td>{{souscripteur.dateCreation | date: 'dd/MM/yyy'}}</td>
+						<td class="btn btn-danger" (click)="supprimerSouscripteur(souscripteur)">Supprimer</td>
+						<td class="btn btn-warning" [routerLink]="['/update-souscripteur',souscripteur.idSouscripteur]">Modifier</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

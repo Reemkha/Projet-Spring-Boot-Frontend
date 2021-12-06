@@ -10,6 +10,7 @@ import { AddSouscripteurComponent } from './souscripteur/add-souscripteur/add-so
 import { UpdateSouscripteurComponent } from './souscripteur/update-souscripteur/update-souscripteur.component';
 import { LoginComponent } from './login/login.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
